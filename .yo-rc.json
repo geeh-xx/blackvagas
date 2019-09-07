@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.blackvagas",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "6.2.0",
+    "applicationType": "gateway",
+    "baseName": "blackvagas",
+    "packageName": "br.com.blackvagas",
+    "packageFolder": "br/com/blackvagas",
+    "serverPort": "8085",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "M2I4NjJlNjI2NWNmYWUzNDQ2OGM4MzIwMjcwYmRlMzhlZmYwZTczOTIwZjI0OGY0NjM3ZjFhNTE4YTI1NWQ3ODViY2FlMjJlYzQzMDIxNmQ4OTRkMGY4MmI0NGRkOTE2MmM2Y2VmZDI3NGRhNjM2MzYxMTE4Yjk5M2I1OTVmYzI=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": ["pt-br"],
+    "blueprints": []
+  }
+}

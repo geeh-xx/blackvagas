@@ -1,0 +1,16 @@
+version: '2'
+services:
+  blackvagas-app:
+    image: blackvagas
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://blackvagas-postgresql:5432/blackvagas
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+    ports:
+      - 8085:8085
+  blackvagas-postgresql:
+    extends:
+      file: postgresql.yml
+      service: blackvagas-postgresql
