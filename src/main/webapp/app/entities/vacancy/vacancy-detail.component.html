@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="vacancy">
+            <h2><span jhiTranslate="blackvagasApp.vacancy.detail.title">Vacancy</span> {{vacancy.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="blackvagasApp.vacancy.description">Description</span></dt>
+                <dd>
+                    <span>{{vacancy.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="blackvagasApp.vacancy.numberCandidats">Number Candidats</span></dt>
+                <dd>
+                    <span>{{vacancy.numberCandidats}}</span>
+                </dd>
+                <dt><span jhiTranslate="blackvagasApp.vacancy.dateLimit">Date Limit</span></dt>
+                <dd>
+                    <span>{{vacancy.dateLimit}}</span>
+                </dd>
+                <dt><span jhiTranslate="blackvagasApp.vacancy.datePublication">Date Publication</span></dt>
+                <dd>
+                    <span>{{vacancy.datePublication}}</span>
+                </dd>
+                <dt><span jhiTranslate="blackvagasApp.vacancy.company">Company</span></dt>
+                <dd>
+                    <div *ngIf="vacancy.companyId">
+                        <a [routerLink]="['/company', vacancy.companyId, 'view']">{{vacancy.companyName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/vacancy', vacancy.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

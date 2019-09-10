@@ -1,0 +1,22 @@
+
+entity Company{
+    name String required,
+    email String required,
+    adress String
+}
+entity Vacancy{
+	description String required,
+    numberCandidats Integer required,
+    dateLimit LocalDate,
+    datePublication LocalDate
+}
+
+relationship OneToMany {
+
+    Company{vacancys} to Vacancy
+}
+
+paginate Vacancy with pagination
+dto * with mapstruct
+service all with serviceImpl
+

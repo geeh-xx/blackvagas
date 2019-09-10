@@ -1,0 +1,26 @@
+{
+  "blackvagasApp": {
+    "vacancy": {
+      "home": {
+        "title": "Vacancies",
+        "createLabel": "Criar novo Vacancy",
+        "createOrEditLabel": "Criar ou editar Vacancy",
+        "notFound": "Nenhum Vacancy encontrado"
+      },
+      "created": "Um novo Vacancy foi criado com o identificador {{ param }}",
+      "updated": "Um Vacancy foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Vacancy foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Vacancy {{ id }}?"
+      },
+      "detail": {
+        "title": "Vacancy"
+      },
+      "description": "Description",
+      "numberCandidats": "Number Candidats",
+      "dateLimit": "Date Limit",
+      "datePublication": "Date Publication",
+      "company": "Company"
+    }
+  }
+}
