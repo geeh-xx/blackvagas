@@ -33,9 +33,9 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5433/blackvagas
-    username: postgres
-    password: 93176425
+    url: jdbc:postgresql://ec2-107-20-167-241.compute-1.amazonaws.com:5432/d5arm2i5tlu57
+    username: qdpmsmblezgeqk
+    password: ee3f9e30c8f4f531283431f5fb761352e15594159892d117042e810c0039ceb0
     hikari:
       poolName: Hikari
       auto-commit: false
